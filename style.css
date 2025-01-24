@@ -1,78 +1,90 @@
 body {
-    background: url("./images/background.png");
-    background-size: cover;
+  background: url("./images/background.png");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    background-color: #d1d1d1;
-    width: 501px;
-    border-radius: 13px;
-    padding: 21px;
-    margin: 101px auto 0;
+  /* background-color: #d1d1d1; */
+  width: 501px;
+  height: 100%;
+  border-radius: 13px;
+  padding: 21px;
+  overflow: auto;
 }
 
 .input-task {
-    border: none;
-    border-radius: 11.5px;
-    width: 331px;
-    height: 39px;
-    padding-left: 11px;
-    font-weight: 500;
-    font-size: 15px;
+  border: none;
+  border-radius: 11.5px;
+  width: 331px;
+  height: 39px;
+  padding-left: 11px;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #d1d1d1;
 }
 
 .add-task {
-    border: none;
-    border-radius: 11px;
-    height: 39px;
-    background-color: #003329;
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 0 15px;
-    float: right;
-    cursor: pointer;
+  border: none;
+  border-radius: 11px;
+  height: 39px;
+  background-color: #003329;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
 }
 
 .add-task:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .add-task:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .list-tasks {
-    width: 100%;
-    list-style: none;
-    margin-top: 31px;
+  width: 100%;
+  list-style: none;
+  margin-top: 31px;
 }
 
 .task {
-    background-color: #f2f2f2;
-    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0, 0.2);
-    height: 39px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    border-radius: 5px;
-    margin-bottom: 21px;
-    cursor: pointer;
-    font-weight: 600;
+  background-color: #d1d1d1;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 21px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.task p {
+  padding: 5px 15px;
 }
 
 img {
-    height: 25px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+  height: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .task:hover img {
-    opacity: 1;
+  opacity: 1;
 }
 
 .done {
-    background-color: #8fac55;
-    text-decoration-line: line-through;
+  background-color: #8fac55;
+  text-decoration-line: line-through;
 }
